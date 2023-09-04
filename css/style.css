@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Ysabeau+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    font-size: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+section, p{
+    font-family: 'Ubuntu', sans-serif;
+font-family: 'Ysabeau SC', sans-serif;
+}
+.logo{
+    padding-left: 30px;
+}
+.logo img{
+    border: 5px solid whitesmoke;
+    border-radius: 40px;
+    padding: -10px;
+}
+.navbar{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    /* background-color: blueviolet; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    padding: 25px ;
+    color: azure;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+    color: rgb(137, 140, 140);
+}
+
+.nav-right{
+    /* background-color: blue; */
+    width: 30%;
+    text-align: right;
+    padding: 0 20px;
+}
+.nav-right i{
+    padding: 10px;
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://uploads.prod01.london.platform-os.com/instances/831/assets/images/What%20Makes%20a%20Building%20a%20Skyscraper%20by%20Fred%20Mills%20via%20The%20B1M.jpg?updated=1605539718');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-family:'Times New Roman', Times, serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.first-section{
+    height: 100vh;
+}
+.first-half{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -85px;
+}
+.second-half{
+    width: 30%;
+    margin-left: 25px;
+}
+.second-half img{
+    width: 100%;
+    border: 5px solid whitesmoke;
+    border-radius: 160px;
+    display: block;
+}
+.big-text{
+    font-size: 40px;
+}
+.small-text{
+    font-size: 20px;
+}
+.btn{
+    padding: 9px 20px;
+    margin: 0 5px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background: none;
+    color: azure;
+    cursor: pointer;   
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 9px 20px;
+}
+.second-section, .fourth-section{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.third-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+.thumbnail{
+    margin-left: 40px;
+}
+.paragraph-2{
+    margin-left: 40px;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* margin-top: 10px; */
+}
+.contact{
+    background-color:rgba(227, 225, 225, 0.71);
+    height: 100vh;
+}
+.text-center{
+    text-align: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.form{
+    max-width: 60%;
+    margin: auto;
+}
+.form-input{
+    padding: 5px;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.text-footer{
+    text-align: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color: azure;
+}
+p.text-footer{
+    margin-bottom: 0px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+   right: 5%;
+   top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: azure;
+    height: 4px;
+    margin: 5px 3px;
+}
+.button{
+    margin-top: 40px;
+}
+.btn-dark{
+    color: snow;
+    margin-left: 389px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-right{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .main-box{
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+    .h-nav{
+        height: 60px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .fifth-section{
+        height: 59vh;
+    }
+    .first-section{
+        height: 65vh;
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    .third-section{
+        flex-direction: column-reverse;
+    }
+    .big-text, .small-text, .button{
+        text-align: center;
+    }
+    .thumbnail{
+        margin: 3px;
+    }
+    .second-half img{
+        height: 95%;
+    }
+    .main-box{
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 450px){
+.first-section{
+    height: 100%;
+}
+.bg-text{
+    margin-left: 87px;
+    font-size: 40px;
+}
+.sm-text{
+    margin-left: 80px;
+    font-size: 20px;
+}
+.button{
+    margin-left: 80px;
+}
+.btn-dark{
+    margin-left: 70px;
+}
+.logo{
+    padding: 6px;
+}
+
+}
